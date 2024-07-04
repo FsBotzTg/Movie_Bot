@@ -12,7 +12,7 @@ RUN apt install git curl python3-pip ffmpeg -y
 
 #Updating Pip Packages
 
-RUN pip3 install U pip
+RUN pip3 install -U pip
 
 #Copying Requirements
 
@@ -27,6 +27,8 @@ RUN pip3 install -Ur requirements.txt
 RUN mkdir /Movie_Bot
 
 WORKDIR /Movie_Bot
+
+RUN git clone https://github.com/FsBotzTg/Movie_Bot /Movie_Bot
 
 COPY start.sh /start.sh
 
