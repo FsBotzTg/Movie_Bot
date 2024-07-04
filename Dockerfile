@@ -4,7 +4,9 @@ FROM python:3.10.8-slim-buster
 
 #Installing Packages
 
-RUN apt update && apt upgrade-y
+RUN apt update
+
+RUN apt upgrade -y
 
 RUN apt install git curl python3-pip ffmpeg -y
 
