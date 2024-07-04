@@ -26,7 +26,7 @@ RUN mkdir /Movie_Bot
 
 WORKDIR /Movie_Bot
 
-COPY start.sh/start.sh
+COPY start.sh /start.sh
 
 #Running Bot
 
